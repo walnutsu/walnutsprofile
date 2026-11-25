@@ -4,10 +4,13 @@ document.getElementById("slot-info").outerHTML = `
 <div class="infowrap open" id="info">
 <div class="infoin">
 
+<!-- NOTE -->
 <div class="infonote">
 <b>Note:</b> Click the chip to view the meaning, others have no meaning, only the things that is not totally familiar to everyone.
 </div>
 
+
+<!-- PERSONALITY -->
 <div class="lbl">Personality</div>
 <div class="panel">
 
@@ -47,17 +50,24 @@ document.getElementById("slot-info").outerHTML = `
 
 </div>
 
+
+<!-- PROFILE -->
 <div class="lbl">Profile</div>
 <div class="panel">
+
 <div class="chip">December 21</div>
 <div class="chip">155cm</div>
 <div class="chip">41kg</div>
 <div class="chip">Philippines</div>
 <div class="chip">Filipino</div>
+
 </div>
 
+
+<!-- SKILLS -->
 <div class="lbl">Skills Good At</div>
 <div class="panel">
+
 <div class="chip">Mathematics</div>
 <div class="chip">Physics</div>
 <div class="chip">Typologies</div>
@@ -65,10 +75,14 @@ document.getElementById("slot-info").outerHTML = `
 <div class="chip">Sketching</div>
 <div class="chip">Graphic Layout</div>
 <div class="chip">Cards Games and Tricks</div>
+
 </div>
 
+
+<!-- HOBBIES -->
 <div class="lbl">Hobby</div>
 <div class="panel">
+
 <div class="chip">Gaming</div>
 <div class="chip">Studying Random Theories</div>
 <div class="chip">Studying Unrelated Subject on Class</div>
@@ -77,22 +91,31 @@ document.getElementById("slot-info").outerHTML = `
 <div class="chip">Writing Stuff/Reflections/Stories</div>
 <div class="chip">Coding</div>
 <div class="chip">Eating Chocolates</div>
+
 </div>
 
+
+<!-- FAVORITES -->
 <div class="lbl">Favorites</div>
 <div class="panel">
+
 <div class="chip">Peanuts</div>
 <div class="chip">Chocolates</div>
 <div class="chip">Rainy Season</div>
 
-<div class="chip" role="button" tabindex="0" data-m="A very dark navy blue, almost black. The hex code #030A14 means RGB (3, 10, 20), a deep midnight shade with a cool blue tint instead of pure black." data-c="#030A14">#030A14</div>
+<div class="chip" role="button" tabindex="0"
+data-m="A very dark navy blue, almost black. The hex code #030A14 means RGB (3, 10, 20), a deep midnight shade with a cool blue tint instead of pure black."
+data-c="#030A14">#030A14</div>
 
 <div class="chip">Forget-me-not Flower</div>
 <div class="chip">Minecraft</div>
 <div class="chip">The Neighbourhood</div>
 <div class="chip">Joji</div>
+
 </div>
 
+
+<!-- HATES -->
 <div class="lbl">Hates</div>
 <div class="panel">
 
@@ -138,10 +161,10 @@ document.getElementById("slot-info").outerHTML = `
 
 <div class="chip" role="button" tabindex="0" data-m="I can't be with people who have no goals in life.">No goals</div>
 
-<div class="chip" role="button" tabindex="0" data-m="I don't like it, especially if it embarrassed me.">Making Fun of me</div>
-
 </div>
 
+
+<!-- MEANING DISPLAY -->
 <div class="mwrap">
 <div class="mclip">
 <div class="meaning" aria-live="polite"></div>
@@ -152,43 +175,3 @@ document.getElementById("slot-info").outerHTML = `
 </div>
 
 `;
-
-(function () {
-    const info = document.getElementById("info");
-    if (!info) return;
-
-    const meaning = info.querySelector(".meaning");
-
-    function displayMeaning(chip) {
-        if (!chip || !meaning) return;
-
-        const text = chip.getAttribute("data-m");
-        if (!text) return;
-
-        meaning.textContent = text;
-
-        info.querySelectorAll(".chip.active").forEach(function (item) {
-            item.classList.remove("active");
-        });
-
-        chip.classList.add("active");
-    }
-
-    info.addEventListener("click", function (event) {
-        const chip = event.target.closest(".chip[data-m]");
-        if (!chip) return;
-
-        displayMeaning(chip);
-    });
-
-    info.addEventListener("keydown", function (event) {
-        const chip = event.target.closest(".chip[data-m]");
-
-        if (!chip) return;
-
-        if (event.key === "Enter" || event.key === " ") {
-            event.preventDefault();
-            displayMeaning(chip);
-        }
-    });
-})();
