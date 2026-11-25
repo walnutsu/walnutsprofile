@@ -45,7 +45,8 @@ document.getElementById("slot-info").outerHTML = `
 <div class="chip">Eating Chocolates</div>  
 </div>  
 <div class="lbl">Favorites</div><div class="panel">  
-<div class="chip">Peanuts</div>  
+<div class="chip">Peanuts</div> 
+<div class="chip">Sea Foods</div> 
 <div class="chip">Chocolates</div>  
 <div class="chip">Rainy Season</div>  
 <div class="chip" role="button" tabindex="0" data-m="A very dark navy blue, almost black. The hex code #030A14 means RGB (3, 10, 20), a deep midnight shade with a cool blue tint instead of pure black." data-c="#030A14">#030A14</div>  
