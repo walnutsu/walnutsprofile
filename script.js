@@ -1,4 +1,3 @@
-/* walnuts - behavior: tabs, chips, music player, posts, story, gallery */
 var card=document.getElementById("card"),info=document.getElementById("info"),btn=document.getElementById("infoBtn");
 document.querySelectorAll(".panel").forEach(function(p){p.querySelectorAll(".chip").forEach(function(c,i){c.style.setProperty("--i",Math.min(i,16))})});
 var curChip=null;
@@ -43,7 +42,7 @@ function upd(){var d=audio.duration;q(A,".sec span:first-child").textContent=fmt
 audio.addEventListener("timeupdate",upd);audio.addEventListener("loadedmetadata",upd);
 audio.addEventListener("ended",function(){loadTrack(albums[A].idx+1)});
 rows.forEach(function(r,n){q(n,".cover").addEventListener("click",function(){if(justUnlocked||n!==A)return;loadTrack(albums[A].idx+1)})});
-// swipe between albums
+
 (function(){var sl=document.getElementById("albums"),dots=[].slice.call(document.querySelectorAll("#adots i")),tm;
 function page(){return Math.max(0,Math.min(rows.length-1,Math.round(sl.scrollLeft/(sl.clientWidth||1))))}
 function setA(n){if(n===A)return;audio.pause();setPlaying(false);A=n;switching=true;loadTrack(albums[A].idx);setTimeout(function(){switching=false},300)}
