@@ -4,13 +4,10 @@ document.getElementById("slot-info").outerHTML = `
 <div class="infowrap open" id="info">
 <div class="infoin">
 
-<!-- NOTE -->
 <div class="infonote">
 <b>Note:</b> Click the chip to view the meaning, others have no meaning, only the things that is not totally familiar to everyone.
 </div>
 
-
-<!-- PERSONALITY -->
 <div class="lbl">Personality</div>
 <div class="panel">
 
@@ -50,8 +47,6 @@ document.getElementById("slot-info").outerHTML = `
 
 </div>
 
-
-<!-- PROFILE -->
 <div class="lbl">Profile</div>
 <div class="panel">
 
@@ -63,8 +58,6 @@ document.getElementById("slot-info").outerHTML = `
 
 </div>
 
-
-<!-- SKILLS -->
 <div class="lbl">Skills Good At</div>
 <div class="panel">
 
@@ -78,8 +71,6 @@ document.getElementById("slot-info").outerHTML = `
 
 </div>
 
-
-<!-- HOBBIES -->
 <div class="lbl">Hobby</div>
 <div class="panel">
 
@@ -94,8 +85,6 @@ document.getElementById("slot-info").outerHTML = `
 
 </div>
 
-
-<!-- FAVORITES -->
 <div class="lbl">Favorites</div>
 <div class="panel">
 
@@ -114,8 +103,6 @@ data-c="#030A14">#030A14</div>
 
 </div>
 
-
-<!-- HATES -->
 <div class="lbl">Hates</div>
 <div class="panel">
 
@@ -163,8 +150,6 @@ data-c="#030A14">#030A14</div>
 
 </div>
 
-
-<!-- MEANING DISPLAY -->
 <div class="mwrap">
 <div class="mclip">
 <div class="meaning" aria-live="polite"></div>
