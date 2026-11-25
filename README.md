@@ -2,7 +2,7 @@
 
 > **𝗮 𝗺𝗶𝗻𝗱 𝘁𝗼𝗼 𝗼𝗰𝗰𝘂𝗽𝗶𝗲𝗱 𝘁𝗼 𝗯𝗲 𝘂𝗻𝗱𝗲𝗿𝘀𝘁𝗼𝗼𝗱.**
 
-(｡•̀ᴗ-)✧ **lucid dreamer, insomniac**
+this site works best on phone:)
 
 ---
 
