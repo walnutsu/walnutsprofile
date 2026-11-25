@@ -157,6 +157,40 @@ data-c="#030A14">#030A14</div>
 <div class="mwrap">
 <div class="mclip">
 <div class="meaning" aria-live="polite"></div>
+
+const infoElement = document.getElementById("info");
+
+if (infoElement) {
+    const meaningBox = infoElement.querySelector(".meaning");
+    const meaningWrap = infoElement.querySelector(".mwrap");
+
+    infoElement.addEventListener("click", function (event) {
+        const chip = event.target.closest(".chip[data-m]");
+
+        if (!chip || !infoElement.contains(chip)) return;
+
+        meaningBox.textContent = chip.getAttribute("data-m");
+
+        meaningWrap.classList.add("show");
+
+        infoElement.querySelectorAll(".chip.active").forEach(item => {
+            item.classList.remove("active");
+        });
+
+        chip.classList.add("active");
+    });
+
+    infoElement.addEventListener("keydown", function (event) {
+        if (
+            event.target.matches(".chip[data-m]") &&
+            (event.key === "Enter" || event.key === " ")
+        ) {
+            event.preventDefault();
+            event.target.click();
+        }
+    });
+}
+
 </div>
 </div>
 
