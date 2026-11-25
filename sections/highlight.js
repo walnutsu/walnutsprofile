@@ -2,7 +2,7 @@
 const highlights = [
   {
     cover: "photos/highlight-cover.jpg",
-    story: "photos/highlight-story.jpg"
+    story: "photos/highlight-story.jpg",
     story: "photos/highlight-story-1.jpg"
   }
 ];
