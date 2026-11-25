@@ -1,4 +1,3 @@
-/* walnuts - INFO tab: typology, skills, hobby, favorites, hates */
 document.getElementById("slot-info").outerHTML = `
 <div class="infowrap open" id="info"><div class="infoin"><div class="infonote"><b>Note:</b> Click the chip to view the meaning, others have no meaning, only the things that is not totally familiar to everyone.</div><div class="lbl">Personality</div><div class="panel">
 <div class="chip" role="button" tabindex="0" data-m="INTJ is a personality type from the Myers-Briggs system. The letters stand for Introverted, Intuitive, Thinking and Judging. INTJs recharge alone, look for patterns and the bigger picture, decide with logic, and like having a clear plan. They are often independent, strategic, and focused on long-term goals.">INTJ</div>
