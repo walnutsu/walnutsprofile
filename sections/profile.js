@@ -34,7 +34,7 @@ document.getElementById("slot-profile-head").outerHTML = `
   </div>
 
   <div class="av"></div>
-  <div class="note">lucid dreamer, insomniac</div>
+  <div class="note">narcolepsy, sleep paralysis?</div>
 
 </div>
 `;
