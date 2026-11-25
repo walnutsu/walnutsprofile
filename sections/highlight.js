@@ -1,7 +1,35 @@
+
+const highlights = [
+  {
+    cover: "photos/highlight-cover.jpg",
+    story: "photos/highlight-story.jpg"
+  },
+
+  {
+    cover: "photos/highlight-cover-2.jpg",
+    story: "photos/highlight-story-2.jpg"
+  },
+
+
+];
+
 document.getElementById("slot-highlight").outerHTML = `
-<div class="hl" id="highlights"><button class="hl-i" type="button" aria-label="Highlight"><i style="background-image:url(photos/highlight-cover.jpg)"></i></button></div>
+<div class="hl" id="highlights">
+  ${highlights.map((item, index) => `
+    <button class="hl-i" type="button" aria-label="Highlight ${index + 1}" data-story="${index}">
+      <i style="background-image:url(${item.cover})"></i>
+    </button>
+  `).join("")}
+</div>
 `;
 
 document.body.insertAdjacentHTML("beforeend", `
-<div class="story" id="story" aria-hidden="true"><div class="sbar"><i></i></div><div class="shead"><i class="pfp"></i><b>walnuts</b></div><button class="sx" id="storyX" type="button" aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button><img class="simg" alt="" src="photos/highlight-story.jpg"></div>
+<div class="story" id="story" aria-hidden="true">
+  <div class="sbar"><i></i></div>
+  <div class="shead"><i class="pfp"></i><b>walnuts</b></div>
+  <button class="sx" id="storyX" type="button" aria-label="Close">
+    <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <img class="simg" alt="" src="${highlights[0].story}">
+</div>
 `);
