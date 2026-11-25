@@ -1,10 +1,45 @@
-# walnuts profile
+# ᭙ꪖꪶ᭢ꪊᡶక
 
-- `index.html` - page skeleton
-- `style.css` - all styling
-- `script.js` - behavior (tabs, chips, music player, posts, story, gallery)
-- `sections/` - profile, player, post, highlight, threads, info (edit text here)
-- `photos/` - all images
-- `audio/` - songs (numbered 00-19 in the order of the `titles` list in script.js)
+> **𝗮 𝗺𝗶𝗻𝗱 𝘁𝗼𝗼 𝗼𝗰𝗰𝘂𝗽𝗶𝗲𝗱 𝘁𝗼 𝗯𝗲 𝘂𝗻𝗱𝗲𝗿𝘀𝘁𝗼𝗼𝗱.**
 
-Open `index.html` directly, or host the whole folder on GitHub Pages.
+(｡•̀ᴗ-)✧ **lucid dreamer, insomniac**
+
+---
+
+## 𝗔𝗯𝗼𝘂𝘁
+
+**my personal profile page** 
+random stuff i just randomly think.
+
+## 𝗪𝗵𝗮𝘁'𝘀 𝗶𝗻𝘀𝗶𝗱𝗲
+
+- **player**: 20 songs, swipe between albums, okay?
+- **info**: personality, profile, skills, hobbies, favorites, hates
+- **post**: photo feed
+- **thread**: notes and thoughts
+- **highlight**: tap the circle
+
+## 𝗙𝗶𝗹𝗲𝘀
+
+| **file** | **what it does** |
+|----------|------------------|
+| `index.html` | the page skeleton |
+| `style.css` | all the styling |
+| `script.js` | tabs, chips, player, gallery |
+| `sections/` | profile, player, post, highlight, threads, info |
+| `photos/` | every image |
+| `audio/` | the songs |
+
+## 𝗘𝗱𝗶𝘁𝗶𝗻𝗴
+
+**change text in** `sections/` ٩(o.o)۶
+**threads live in** `sections/threads.js`.
+
+## 𝗩𝗶𝗲𝘄 𝗶𝘁
+
+**open** `index.html`**, or visit the GitHub Pages link.**
+
+---
+
+**music belongs to its artists.**
+**made by walnuts**
