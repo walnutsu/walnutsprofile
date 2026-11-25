@@ -14,10 +14,10 @@ random stuff i just randomly think.
 ## 𝗪𝗵𝗮𝘁'𝘀 𝗶𝗻𝘀𝗶𝗱𝗲
 
 - **player**: 20 songs, swipe between albums, okay?
-- **info**: personality, profile, skills, hobbies, favorites, hates
-- **post**: photo feed
-- **thread**: notes and thoughts
-- **highlight**: tap the circle
+- **info**: personality, profile, skills, hobbies, favorites, and hates, okay?
+- **post**: photo feed, okay?
+- **thread**: notes and thoughts, okay?
+- **highlight**: tap the circle, okay?
 
 ## 𝗙𝗶𝗹𝗲𝘀
 
@@ -32,7 +32,7 @@ random stuff i just randomly think.
 
 ## 𝗘𝗱𝗶𝘁𝗶𝗻𝗴
 
-**change text in** `sections/` ٩(o.o)۶
+**change text in** `sections/` っ ̯ -｡ 
 **threads live in** `sections/threads.js`.
 
 ## 𝗩𝗶𝗲𝘄 𝗶𝘁
@@ -42,4 +42,5 @@ random stuff i just randomly think.
 ---
 
 **music belongs to its artists.**
+
 **made by walnuts**
