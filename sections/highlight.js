@@ -3,23 +3,14 @@ const highlights = [
   {
     cover: "photos/highlight-cover.jpg",
     story: "photos/highlight-story.jpg"
-  },
-
-  {
-    cover: "photos/highlight-cover-2.jpg",
-    story: "photos/highlight-story-2.jpg"
-  },
-
-
+  }
 ];
 
 document.getElementById("slot-highlight").outerHTML = `
 <div class="hl" id="highlights">
-  ${highlights.map((item, index) => `
-    <button class="hl-i" type="button" aria-label="Highlight ${index + 1}" data-story="${index}">
-      <i style="background-image:url(${item.cover})"></i>
-    </button>
-  `).join("")}
+  <button class="hl-i" type="button" aria-label="Highlight">
+    <i style="background-image:url(${highlights[0].cover})"></i>
+  </button>
 </div>
 `;
 
