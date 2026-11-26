@@ -12,7 +12,7 @@ document.getElementById("slot-threads").outerHTML = `
 <span class="date">November 26, 2026</span>
 </div>
 </div>
-<div class="tt">all shit haooening if you kept doing the same bad behavior. don't be stupid.</div>
+<div class="tt">all shit happening if you kept doing the same bad behavior. don't be stupid.</div>
 </div>
 
 <div class="tpost">
