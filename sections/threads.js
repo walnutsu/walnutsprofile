@@ -9,6 +9,17 @@ document.getElementById("slot-threads").outerHTML = `
 <i class="pfp"></i>
 <div class="tn">
 <b>walnuts</b>
+<span class="date">November 26, 2026</span>
+</div>
+</div>
+<div class="tt">all shit haooening if you kept doing the same bad behavior. don't be stupid.</div>
+</div>
+
+<div class="tpost">
+<div class="th">
+<i class="pfp"></i>
+<div class="tn">
+<b>walnuts</b>
 <span class="date">November 25, 2026</span>
 </div>
 </div>
